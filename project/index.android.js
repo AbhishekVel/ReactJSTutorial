@@ -6,7 +6,9 @@ import AlbumList from './src/components/AlbumList';
 
 // create a Component
 const App = () => (
-  <View>
+   // style expands the content to take up the entire width/height of screen
+   // allows for scrolling
+  <View style={{ flex: 1 }}>
     <Header headerText={'Albums'} />
     <AlbumList />
   </View>
