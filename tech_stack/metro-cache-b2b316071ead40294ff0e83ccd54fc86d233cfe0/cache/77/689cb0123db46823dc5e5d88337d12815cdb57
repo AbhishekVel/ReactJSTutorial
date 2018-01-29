@@ -1,0 +1,15 @@
+__d(function (global, require, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _LibraryList = require(_dependencyMap[0], "./LibraryList.json");
+
+  var _LibraryList2 = _interopRequireDefault(_LibraryList);
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  exports.default = function () {
+    return _LibraryList2.default;
+  };
+});

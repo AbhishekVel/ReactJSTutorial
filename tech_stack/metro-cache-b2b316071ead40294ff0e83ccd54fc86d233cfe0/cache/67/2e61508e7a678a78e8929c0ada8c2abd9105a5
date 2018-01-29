@@ -20,6 +20,10 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   var _reducers2 = _interopRequireDefault(_reducers);
 
+  var _LibraryList = require(_dependencyMap[6], "./components/LibraryList");
+
+  var _LibraryList2 = _interopRequireDefault(_LibraryList);
+
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
   var App = function App() {
@@ -29,7 +33,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
         store: (0, _redux.createStore)(_reducers2.default),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 12
         }
       },
       _react2.default.createElement(
@@ -37,14 +41,20 @@ __d(function (global, require, module, exports, _dependencyMap) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 12
+            lineNumber: 13
           }
         },
         _react2.default.createElement(_common.Header, {
           headerText: "Tech Stack",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 13
+            lineNumber: 14
+          }
+        }),
+        _react2.default.createElement(_LibraryList2.default, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 15
           }
         })
       )

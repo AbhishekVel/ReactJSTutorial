@@ -5,9 +5,13 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   var _redux = require(_dependencyMap[0], "redux");
 
+  var _LibraryReducer = require(_dependencyMap[1], "./LibraryReducer");
+
+  var _LibraryReducer2 = _interopRequireDefault(_LibraryReducer);
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
   exports.default = (0, _redux.combineReducers)({
-    libraries: function libraries() {
-      return [];
-    }
+    libraries: _LibraryReducer2.default
   });
 });
