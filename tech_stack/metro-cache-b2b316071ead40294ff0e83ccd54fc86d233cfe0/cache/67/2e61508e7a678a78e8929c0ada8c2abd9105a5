@@ -1,0 +1,55 @@
+__d(function (global, require, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  var _jsxFileName = "/home/abhishek/Desktop/react-native-learning/tech_stack/src/App.js";
+
+  var _react = require(_dependencyMap[0], "react");
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _reactNative = require(_dependencyMap[1], "react-native");
+
+  var _reactRedux = require(_dependencyMap[2], "react-redux");
+
+  var _redux = require(_dependencyMap[3], "redux");
+
+  var _common = require(_dependencyMap[4], "./components/common");
+
+  var _reducers = require(_dependencyMap[5], "./reducers");
+
+  var _reducers2 = _interopRequireDefault(_reducers);
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  var App = function App() {
+    return _react2.default.createElement(
+      _reactRedux.Provider,
+      {
+        store: (0, _redux.createStore)(_reducers2.default),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        }
+      },
+      _react2.default.createElement(
+        _reactNative.View,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12
+          }
+        },
+        _react2.default.createElement(_common.Header, {
+          headerText: "Tech Stack",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          }
+        })
+      )
+    );
+  };
+
+  exports.default = App;
+});
